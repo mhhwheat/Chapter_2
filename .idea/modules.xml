@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AidlDemo_client/AidlDemo_client.iml" filepath="$PROJECT_DIR$/AidlDemo_client/AidlDemo_client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Chapter_2.iml" filepath="$PROJECT_DIR$/Chapter_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SelfAIDL_Client/SelfAIDL_Client.iml" filepath="$PROJECT_DIR$/SelfAIDL_Client/SelfAIDL_Client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidl/aidl.iml" filepath="$PROJECT_DIR$/aidl/aidl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aidldemo_service/aidldemo_service.iml" filepath="$PROJECT_DIR$/aidldemo_service/aidldemo_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
