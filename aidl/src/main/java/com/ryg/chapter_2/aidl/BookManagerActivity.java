@@ -11,6 +11,8 @@ import android.os.IBinder;
 import android.os.Message;
 import android.os.RemoteException;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.List;
 
@@ -93,6 +95,20 @@ public class BookManagerActivity extends Activity {
         setContentView(R.layout.activity_book_manager);
         Intent intent=new Intent(this,BookManagerService.class);
         bindService(intent,mConnection, Context.BIND_AUTO_CREATE);
+
+        Button button=(Button)findViewById(R.id.button1);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.i(TAG,"button click");
+                try {
+                    mRemoteBookManager.getBookList();
+                } catch (RemoteException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     @Override

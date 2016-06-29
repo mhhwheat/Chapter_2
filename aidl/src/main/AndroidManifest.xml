@@ -32,6 +32,16 @@
         <activity android:name="com.ryg.chapter_2.aidl.BookManagerActivity"
             android:label="BookManager"
             android:theme="@style/AppTheme.NoActionBar">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name="com.ryg.chapter_2.provider.ProviderActivity"
+            android:label="BookProvider"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -41,13 +51,20 @@
 
         <service android:name="com.ryg.chapter_2.messenger.MessengerService"
             android:process=":remote">
-
         </service>
 
         <service android:name=".BookManagerService"
             android:process=":remote">
 
         </service>
+
+        <provider
+            android:authorities="com.ryg.chapter_2.book.provider"
+            android:name="com.ryg.chapter_2.provider.BookProvider"
+            android:permission="com.ryg.PROVIDER"
+            android:process=":provider">
+
+        </provider>
     </application>
 
 </manifest>
